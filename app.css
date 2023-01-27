@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    padding: 0px 16px;
+    color: white;
+}
+
+.logo {
+    flex-grow: 1;
+    padding: 12px 0px;
+    font-weight: bold;
+}
+
+nav>ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li {
+    cursor: pointer;
+    width: 120px;
+    text-align: center;
+    padding: 12px;
+}
+
+nav>ul>li:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#loader {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.movie-img-wrapper {
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 2/3;
+}
+
+.movie-holder {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.movie-holder>a {
+    flex-basis: 100px;
+    flex-grow: 1;
+    margin: 24px 3%;
+}
+
+.movie-holder>a>div {
+    width: 100%;
+    text-align: center;
+    font-size: medium;
+}
+
+.d-none {
+    display: none;
+}
+
+.v-none {
+    visibility: hidden;
+}
+
+#booker {
+    text-align: center;
+}
+
+#booker-grid-holder {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.booking-grid {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 10px;
+}
+
+.booking-grid-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.booking-grid-cell {
+    display: flex;
+    width: 25%;
+    aspect-ratio: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.unavailable-seat {
+    background-color: black;
+}
+
+.available-seat {
+    background-color: blue;
+}
+
+.selected-seat {
+    border: 4px outset rgb(0, 0, 0);
+}
+
+#customer-detail-form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(40px);
+    width: fit-content;
+    margin: 20px auto 10px auto;
+}
+
+#customer-detail-form>* {
+    margin: 5px;
+}
+
+#customer-detail-form>label {
+    text-align: left;
+}
+
+#customer-detail-form>input[type="submit"] {
+    grid-column: 1/3;
+}
